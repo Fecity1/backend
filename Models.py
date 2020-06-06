@@ -1,5 +1,7 @@
 from django.db import models
 
+#Данные пользователя
+
 class Human(models.Model):
     class Meta:
         verbose_name = 'Пользователь'
@@ -25,7 +27,9 @@ class Human(models.Model):
     #Photo = models.ImageField(verbose_name='Фото', , upload_to='images', null=True)
     VoiseStatus = models.BooleanField(verbose_name='Мой голос')
 
-class Request(models.Model):
+#Модель заявки
+
+class Actions(models.Model):
     class Meta:
         verbose_name = 'Заявка'
 
@@ -46,6 +50,7 @@ class Request(models.Model):
     Status = models.BooleanField(verbose_name='Статус исполнения')
     DataFinal = models.DateTimeField(verbose_name='Время Исполнения', null=True)
 
+#Новостной контент
 
 class NewsContent(models.Model):
     class Meta:
