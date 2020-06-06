@@ -2,7 +2,7 @@ from django.db import models
 
 #Данные пользователя
 
-class Human(models.Model):
+class User(models.Model):
     class Meta:
         verbose_name = 'Пользователь'
 
