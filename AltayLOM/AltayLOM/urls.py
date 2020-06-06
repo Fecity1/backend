@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from leaders.views import get_profiles
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('get-profiles/', get_profiles),
 ]
